@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Todos" ALTER COLUMN "Order" SET DEFAULT 0;
