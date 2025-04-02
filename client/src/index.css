@@ -25,6 +25,35 @@ body {
     line-height: 1.6;
 }
 
+.todo-priority {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the element */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .todo-priority:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
 .container {
     max-width: 800px;
     margin: 2rem auto;
